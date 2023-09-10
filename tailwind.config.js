@@ -1,4 +1,5 @@
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,8 +12,8 @@ module.exports = {
     colors: {
       brandCream: "#FFFEF4",
       brandYellow: "#FDE1A3",
-      brandBrown: "#FDE1A3",
-      brandred: "#EB5066",
+      brandBrown: "#472B29",
+      brandRed: "#EB5066",
     },
     extend: {
       keyframes: {
@@ -40,4 +41,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+});
