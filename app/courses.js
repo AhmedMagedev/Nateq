@@ -9,6 +9,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import Link from "next/link";
 
 function CardDefault({ title, image, desc }) {
   return (
@@ -23,7 +24,9 @@ function CardDefault({ title, image, desc }) {
         <Typography>{desc}</Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button className="bg-brandBrown">Read More</Button>
+        <Link href="/quran">
+          <Button className="bg-brandBrown">Read More</Button>
+        </Link>
       </CardFooter>
     </Card>
   );
