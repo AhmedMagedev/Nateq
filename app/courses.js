@@ -36,12 +36,12 @@ export default function Courses() {
   return (
     <div className="py-24 bg-brandCream flex space-x-12 justify-center">
       <CardDefault
-        title={`Quran`}
+        title={`Quran Lessons`}
         image={`/quran.jpg`}
         desc={`Learn the Quran with a professional Quran teacher with over 10 years of experience. Our courses are designed to be fun and engaging for kids of all ages. We use a variety of teaching methods, including games, and stories, to make learning the Quran enjoyable.`}
       />
       <CardDefault
-        title={`Arabic language`}
+        title={`Arabic Lessons`}
         image={`/kid2.jpg`}
         desc={`Learn the Quran with a professional Quran teacher with over 10 years of experience. Our courses are designed to be fun and engaging for kids of all ages. We use a variety of teaching methods, including games, and stories, to make learning the Quran enjoyable.`}
       />

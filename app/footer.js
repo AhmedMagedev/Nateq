@@ -7,8 +7,8 @@ const navItems = ["About", "Courses", "Contact"];
 
 export function FooterWithLogo() {
   return (
-    <footer className="w-full bg-white p-8">
-      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
+    <footer className="w-ful p-8">
+      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12  text-center md:justify-between">
         <Image src="/logo.svg" width={100} height={100} alt="logo" />
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           {navItems.map((item) => {
