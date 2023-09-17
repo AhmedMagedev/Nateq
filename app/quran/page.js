@@ -19,17 +19,27 @@ export default function Quran() {
       <div className="flex">
         <div>
           <h1 className="text-3xl text-bold">Quran Classes</h1>
-          <p className="text-xl py-12">
+          <p className="text-lg py-12">
             Learn the Quran with a professional Quran teacher with over 10 years
             of experience. Our courses are designed to be fun and engaging for
             kids of all ages. We use a variety of teaching methods, including
             games, and stories, to make learning the Quran enjoyable.
+            <br />
+            Our courses are taught by qualified Arabic teachers who are
+            passionate about teaching children. We believe that every child has
+            the potential to learn Arabic, and we are committed to providing
+            them with the best education.
+            <br />
+            <span className="font-bold">
+              Sign up for our free trial today and see how much your child
+              enjoys learning Arabic with us!
+            </span>
           </p>
         </div>
         <Image
-          src="/mosque.jpg"
+          src="/kidbw.jpg"
           height={200}
-          width={400}
+          width={500}
           alt="logo"
           className="mr-12 ml-24 rounded-lg border-4 border-brandCream shadow-lg"
         />

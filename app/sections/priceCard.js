@@ -27,7 +27,7 @@ function CheckIcon() {
   );
 }
 
-export default function PricingCard() {
+export default function PricingCard({ price, first, second }) {
   return (
     <Card variant="gradient" className="w-full max-w-[20rem] p-8 white">
       <CardHeader
@@ -41,8 +41,8 @@ export default function PricingCard() {
           color="black"
           className="mt-6 flex justify-center gap-1 text-7xl font-normal"
         >
-          <span className="mt-2 text-4xl">$</span>8{" "}
-          <span className="self-end text-4xl">/hour</span>
+          <span className="mt-2 text-4xl">$</span>
+          {price} <span className="self-end text-xl">/Monthly</span>
         </Typography>
       </CardHeader>
       <CardBody className="p-0">
@@ -51,33 +51,27 @@ export default function PricingCard() {
             <span className="rounded-full border border-white/20 bg-white/20 p-1">
               <CheckIcon />
             </span>
-            <Typography className="font-normal">5 team members</Typography>
-          </li>
-          <li className="flex items-center gap-4">
-            <span className="rounded-full border border-white/20 bg-white/20 p-1">
-              <CheckIcon />
-            </span>
-            <Typography className="font-normal">200+ components</Typography>
-          </li>
-          <li className="flex items-center gap-4">
-            <span className="rounded-full border border-white/20 bg-white/20 p-1">
-              <CheckIcon />
-            </span>
-            <Typography className="font-normal">40+ built-in pages</Typography>
-          </li>
-          <li className="flex items-center gap-4">
-            <span className="rounded-full border border-white/20 bg-white/20 p-1">
-              <CheckIcon />
-            </span>
-            <Typography className="font-normal">1 year free updates</Typography>
+            <Typography className="font-normal">{first}</Typography>
           </li>
           <li className="flex items-center gap-4">
             <span className="rounded-full border border-white/20 bg-white/20 p-1">
               <CheckIcon />
             </span>
             <Typography className="font-normal">
-              Life time technical support
+              Free Evaluation Session
             </Typography>
+          </li>
+          <li className="flex items-center gap-4">
+            <span className="rounded-full border border-white/20 bg-white/20 p-1">
+              <CheckIcon />
+            </span>
+            <Typography className="font-normal">Monthly Assessment</Typography>
+          </li>
+          <li className="flex items-center gap-4">
+            <span className="rounded-full border border-white/20 bg-white/20 p-1">
+              <CheckIcon />
+            </span>
+            <Typography className="font-normal">{second}</Typography>
           </li>
         </ul>
       </CardBody>
