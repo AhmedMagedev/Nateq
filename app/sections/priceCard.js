@@ -6,6 +6,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import Link from "next/link";
 
 function CheckIcon() {
   return (
@@ -36,19 +37,12 @@ export default function PricingCard() {
         className="m-0 mb-8 rounded-none border-b border-white/10 pb-8 text-center "
       >
         <Typography
-          variant="small"
-          color="black"
-          className="font-normal uppercase"
-        >
-          standard
-        </Typography>
-        <Typography
           variant="h1"
           color="black"
           className="mt-6 flex justify-center gap-1 text-7xl font-normal"
         >
-          <span className="mt-2 text-4xl">$</span>29{" "}
-          <span className="self-end text-4xl">/mo</span>
+          <span className="mt-2 text-4xl">$</span>8{" "}
+          <span className="self-end text-4xl">/hour</span>
         </Typography>
       </CardHeader>
       <CardBody className="p-0">
@@ -88,14 +82,16 @@ export default function PricingCard() {
         </ul>
       </CardBody>
       <CardFooter className="mt-12 p-0">
-        <Button
-          size="lg"
-          className="hover:scale-[1.02] focus:scale-[1.02] active:scale-100 bg-brandBrown"
-          ripple={false}
-          fullWidth={true}
-        >
-          Buy Now
-        </Button>
+        <Link href="/contact">
+          <Button
+            size="lg"
+            className="hover:scale-[1.02] focus:scale-[1.02] active:scale-100 bg-brandBrown"
+            ripple={true}
+            fullWidth={true}
+          >
+            Book now
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );

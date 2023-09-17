@@ -1,8 +1,8 @@
-import ComingSoon from "./comingSoon";
-import About from "./about";
-import Courses from "./courses";
+import ComingSoon from "./sections/banner";
+import About from "./sections/about";
+import Courses from "./sections/courses";
 import { Montserrat } from "next/font/google";
-import Cta from "./cta";
+import Cta from "./sections/cta";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 

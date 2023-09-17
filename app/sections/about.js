@@ -2,15 +2,16 @@
 
 import Image from "next/image";
 import { Button } from "@material-tailwind/react";
+import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="py-20 px-40 text-lg leading-relaxed bg-white">
+    <div className="py-20 px-40 text-lg leading-relaxed bg-white " id="about">
       <h1 className="text-4xl text-bold">About Nateq</h1>
       <div className="flex">
         <div>
           <p className="text-2xl py-12">
-            We are a professional Arabic language learning institute that
+            We are a professional Arabic language teaching institute that
             provides high-quality Arabic language courses to children who do not
             speak Arabic as their first language. Our teachers are native Arabic
             speakers with years of experience teaching Arabic to children. We
@@ -20,12 +21,16 @@ export default function About() {
             with Arabic speakers and learn about Arabic culture.
           </p>
           <div className="flex w-max gap-4">
-            <Button ripple={true} className="bg-brandBrown">
-              Explore Courses
-            </Button>
-            <Button ripple={true} className="bg-brandBrown">
-              Contact Us
-            </Button>
+            <Link href="#courses">
+              <Button ripple={true} className="bg-brandBrown">
+                Explore Courses
+              </Button>
+            </Link>
+            <Link href="./contact">
+              <Button ripple={true} className="bg-brandBrown">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
         <Image

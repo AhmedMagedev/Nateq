@@ -3,22 +3,26 @@
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
-const navItems = ["About", "Courses", "Contact"];
+const navItems = [
+  { title: "About", path: "./#about", id: 1 },
+  { title: "Courses", path: "./#courses", id: 2 },
+  { title: "Contact", path: "./contact", id: 3 },
+];
 
 export function FooterWithLogo() {
   return (
-    <footer className="w-ful p-8">
-      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12  text-center md:justify-between">
+    <footer className="w-ful p-8 bg-white border-t-2 shadow-md">
+      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 mx-auto container text-center md:justify-between bg-white">
         <Image src="/logo.svg" width={100} height={100} alt="logo" />
-        <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+        <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
           {navItems.map((item) => {
             return (
-              <li key={item.indexOf}>
+              <li key={item.id}>
                 <a
                   className="px-3 py-2 flex items-center text-md uppercase leading-snug hover:opacity-75"
-                  href="#pablo"
+                  href={item.path}
                 >
-                  <span className="ml-2 text-md">{item}</span>
+                  <span className="ml-2 text-md">{item.title}</span>
                 </a>
               </li>
             );

@@ -18,13 +18,24 @@ export default function Quran() {
     <Container className=" h-full py-12">
       <div className="flex">
         <div>
-          <h1 className="text-3xl text-bold">Quran Classes</h1>
-          <p className="text-xl py-12">
-            Learn the Quran with a professional Quran teacher with over 10 years
-            of experience. Our courses are designed to be fun and engaging for
-            kids of all ages. We use a variety of teaching methods, including
-            games, and stories, to make learning the Quran enjoyable.
+          <h1 className="text-3xl text-bold">Arabic classes</h1>
+          <p className="text-lg py-12">
+            Learn Arabic with a fun and engaging online program. Our courses are
+            designed for kids of all ages and use a variety of teaching methods,
+            including games, and stories, to make learning Arabic enjoyable.
+            <br />
+            Our courses are taught by qualified Arabic teachers who are
+            passionate about teaching children. We believe that every child has
+            the potential to learn Arabic, and we are committed to providing
+            them with the best possible education.
+            <br />
+            <span className="font-bold">
+              Sign up for our free trial today and see how much your child
+              enjoys learning Arabic with us!
+            </span>
           </p>
+
+          <p className="text-2xl font-bold"></p>
         </div>
         <Image
           src="/mosque.jpg"
@@ -36,7 +47,7 @@ export default function Quran() {
       </div>
       <Accordion open={open === 1}>
         <AccordionHeader onClick={() => handleOpen(1)}>
-          What is Material Tailwind?
+          Why Nateq
         </AccordionHeader>
         <AccordionBody>
           We&apos;re not always in the position that we want to be at.
